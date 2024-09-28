@@ -7,16 +7,42 @@ a {
     display:block;
     padding:20px;
 }
-h1 {color:steelblue;
+h1 {color:black;
 }
 img {
     width:150px;
     height:auto;
     border:1px solid steelblue;
     padding:2px;
-    box-shadow:0030px gray;
+    box-shadow:0030px ghostwhite;
 }
 p {
     padding:10px;
 }
-
+main {
+    max-width: 900px;
+}
+aside {
+    width: 1000px;
+    margin:auto;
+    border:10px;
+    padding:10px;
+    background-color:whitesmoke;
+    color:black;
+}
+aside img {
+    width:150px;
+    height:auto;
+}
+main img {
+    width:140px;
+    height:fit-content;
+}
+p {padding:0;
+}
+footer{
+    margin-top:10px;
+    border-top:1ex solid;
+    text-align:center
+}
+]
