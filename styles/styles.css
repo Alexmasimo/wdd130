@@ -1,23 +1,33 @@
+/*adding a root rule/selector at the top to declare CSS global variables inside it,these 
+variables help to create reusable values that can be used through out the style sheet,the var() are variables 
+ while --are roots */
+:root {
+    --heading-background-color:font;
+    --heading-text-color:444;
+    ---heading-font: 'Masimo',
+    --padding: 2rem;
+    --border: 2px solid rgba(0,0,0);
+}
 nav {
     background-color:steelblue;
     padding:10px;
 }
 a {
-    color:white;
+    color:var(--heading-text-color);
     display:block;
-    padding:20px;
+    padding: var(--padding);
 }
 h1 {color:black;
 }
 img {
     width:150px;
     height:auto;
-    border:1px solid steelblue;
-    padding:2px;
+    border:var(---border);
+    padding :var(--padding);
     box-shadow:0030px ghostwhite;
 }
 p {
-    padding:10px;
+    padding:var(--padding);
 }
 main {
     max-width: 900px;
@@ -27,7 +37,7 @@ aside {
     margin:auto;
     border:10px;
     padding:10px;
-    background-color:whitesmoke;
+    background-color:var(--heading-background-color);
     color:black;
 }
 aside img {
@@ -38,11 +48,11 @@ main img {
     width:140px;
     height:fit-content;
 }
-p {padding:0;
+p {padding: var(--padding);
 }
 footer{
     margin-top:10px;
     border-top:1ex solid;
     text-align:center
 }
-]
+
