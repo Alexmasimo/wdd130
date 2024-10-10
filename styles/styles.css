@@ -4,7 +4,7 @@ variables help to create reusable values that can be used through out the style 
 :root {
     --heading-background-color:font;
     --heading-text-color:444;
-    ---heading-font: 'Masimo',
+    ---heading-font: 'italic',
     --padding: 2rem;
     --border: 2px solid rgba(0,0,0);
 }
@@ -13,7 +13,7 @@ nav {
     padding:10px;
 }
 a {
-    color:var(--heading-text-color);
+    color:var(--heading-text-color) ;
     display:block;
     padding: var(--padding);
 }

@@ -1,0 +1,49 @@
+:root {
+  --heading-background-color:font;
+  ---text-font:"Roboto",sans-serif;
+  ---heading-font: "Roboto", sans-serif
+
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .hero {
+    background-image:'cargo.jpg';
+    background-size:cover;
+    background-position:absolute;
+
+  }
+  .hero img {
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .hero h1 {
+    font-size:auto;
+    margin-bottom:0%;
+    mask-position:absolute;
+  }
+  
+  .hero article {
+    display:flex;
+    justify-content:center;
+    position:absolute;
+  }
+
+  .hero article img {
+    width:50;
+    box-shadow:0,0,0 10px gra(0,0,0,0.1);
+    float:right;
+  }
+  a {
+    text-decoration:none;}
+  }
