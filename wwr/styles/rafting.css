@@ -1,85 +1,194 @@
+/* Color variables */
 :root {
-  --heading-background-color:font;
-  --text-font:"Roboto",sans-serif;
-  --heading-font: "Roboto", sans-serif
-
-
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .hero {
-    background-image:'cargo.jpg';
-    background-size:cover;
-    background-position:absolute;
-  }
-
-  .header {
-    display: flex;                
-    justify-content: center;      
-    align-items: center;         
-    height: 100vh;                
+  --primary-color: #553551;
+  --secondary-color: #755b69;
+  --accent-color-1: #96c5b0;
+  --accent-color-2: #4df1d2;
 }
 
-.header img {
-    display: block;
-    max-width: 100%;              
-    height: auto;
-
-  }
-
-  .hero h1 {
-    font-size:auto;
-    margin-bottom:0%;
-    mask-position:absolute;
-  }
-  
-  article {
-    background-color: #f0f8ff;
-    padding: 20px;             
-    border-radius: 8px;       
-    margin: 20px 0;           
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  background-color: var(--accent-color-1);
+  color: #fff;
 }
 
-  .hero article {
-    display:flex;
-    justify-content:center;
-    position:absolute;
-  }
-
-  .hero article img {
-    width:50;
-    box-shadow:0,0,0 10px gra(0,0,0,0.1);
-    float:right;
-  }
-  .a {
-    text-decoration:none;
-  }
-  .socialmedialinks {
-    display: flex;                 
-    justify-content: flex-end;     
-    padding: 10px 20px;            
-    position: fixed;             
-    top: 20px;                     
-    right: 20px;             
-    z-index: 100;                  
+/* Header */
+header {
+  background-color: var(--accent-color-1);
+  padding: 20px;
+  text-align:right;
 }
 
-.socialmedialinks a {
-    margin-left: 15px;             
+header .logo {
+  flex: 1; /* Allow the logo to take up space on the left */
 }
 
-.socialmedialinks img {
-    width: 50px;                  
-    height: auto;                  
+nav ul {
+  list-style: none;
+  padding: 0;
+  justify-content:flex-end;
+  gap:20px;
 }
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
 }
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color-1);
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--secondary-color);
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px;
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--accent-color-2);
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* History Section */
+.history {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--accent-color-1);
+}
+
+.history img {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+.history div {
+  max-width: 500px;
+}
+
+/* Adventure Section */
+.adventure {
+  background-color: var(--accent-color-1);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.adventure h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+/* Flexbox for Adventure Images to separate them to display horizontally*/
+.adventure-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* To Ensure it wraps on smaller screens */
+  gap: 20px; /* To Space between figures */
+}
+
+.adventure-grid figure {
+  flex: 1; /* To Make each figure take up equal space */
+  margin: 0;
+  text-align: center;
+}
+
+.adventure-grid figure img {
+  width: 100%; /*  To Make images responsive */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
+}
+
+.adventure-grid figure figcaption {
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: #fff;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  position:absolute;
+  right:20px
+}
+
+footer .social-icons a:hover {
+  color: var(--accent-color-1);
+}
+
+
+
+
+
+
+
+
+
+
+
