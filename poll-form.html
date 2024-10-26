@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US"
+<head>
+<meta charset="utf-8"
+<meta name="viewport" content="width, initial-scale=1.0">
+<meta name="description" content="My name is Masimo Alex, studying Bachelor of Science in 
+Software Development at Brigham Young University-Idaho. The purpose of this page 
+is to showcase the projects I will develop as a student to track my experience and skills." />
+<link rel="stylesheet"   href="styles/poll-form.css"
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+</header>
+<main>
+    <form action="submit_form.php" method="post">
+        <fieldset>
+            <legend>contact information</legend>
+<!--field for entering full name!-->
+        <div class="form-item"
+        <label for ="full name">Full name:</label>
+        </div>
+        </fieldset>
+        </fieldset>
+        <input type=""text" id ="full name" name="Full Name" required><br><br>
+        <div class="colum 2"
+        <label for ="user's email">User's Email</label>
+        
+        <input type="email"  id ="user's email" name=" User's Email" value="User email">
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+                <!--> Browser Select Field -->
+                <label for="browser">what is your favorite browser?:</label>
+                <select id="browser" name="browser">
+                  <option value="chrome">Chrome</option>
+                  <option value="firefox">Firefox</option>
+                  <option value="safari">explorer</option>
+                  <option value="opera mini">opera mini</option>
+                /*asking user to fill if he or she has household pens*/
+                <div class="column 1"
+                <label  for ="pet">Do you have house hold pet?</label>
+                <!-- Checkbox Field allows to select displayed options e.g the input below-->
+                <input type="checkbox" id="pet" name="pet" value="yes">
+                <!-- Textarea Field -->
+                <label for="places lived">List the places you have lived:</label>
+                <textarea id="place" name="place" rows="4" cols="50" placeholder="Enter places here..."></textarea><br><br>
+                </select>
+                </div>
+        </fieldset>
+    </form>
+    <button type="submit">Submit poll</button>
+
+</main>
+</body>
+<footer>copyright.@ masimo alex</footer>
